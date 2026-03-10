@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-lime: #84cc16;
+  --color-brand-dark: #0a0a0a;
+  --color-brand-card: #151619;
+  --color-brand-olive: #3f6212;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-brand-card border border-white/10 rounded-2xl p-6;
+}
+
+.lime-gradient {
+  background: linear-gradient(135deg, #84cc16 0%, #4d7c0f 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
